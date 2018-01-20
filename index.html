@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/css-circular-prog-bar.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/app.css">
+    <script src="src/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="progress-circle p50">
+          <span></span>
+          <div class="left-half-clipper">
+         <div class="first50-bar"></div>
+            <div class="value-bar"></div> 
+          </div>
+        </div> -->
+        
+    <div class="container">
+        <div class="header-title">
+            Simple Timer
+        </div>
+        <div class="time-remaining">TIME REMAINING:</div>
+        <div class="countdown">
+            <div class="time">
+               <div class="up-arrow" id="up-arrow-hour">^</div>
+               <div id="hour">0</div>
+               <div class="time-text hour-text">
+                   hour
+               </div>
+               <div class="down-arrow" id="down-arrow-hour">^</div>
+            </div>
+            <div class="semi-colon">:</div>
+            <div class="time">
+                <div class="up-arrow" id="up-arrow-min">^</div>
+                <div id="minutes">25</div>
+                <div class="time-text minute-text">
+                    minutes
+                </div>
+                <div class="down-arrow" id="down-arrow-min">^</div>
+            </div>
+            <div class="semi-colon">:</div>
+            <div class="time">
+                <div class="up-arrow" id="up-arrow-sec">^</div>
+                <div id="seconds">00</div>
+                <div class="time-text second-text">
+                    seconds
+                </div>
+                <div class="down-arrow" id="down-arrow-sec">^</div>
+            </div>
+        </div>
+
+        <div class="radial-progress-bar">
+            <div class="progress-circle p0">
+                    <span id="clock-time">05:00:00</span>
+                    <span id="start">START</span>
+                    <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                        <div class="value-bar"></div> 
+                    </div>
+            </div> 
+        </div>
+
+        <div class="button-container">
+            <div class="btn pause-resume">
+                    <i class="fa fa-pause" aria-hidden="true"></i>
+            </div>
+            <div class="btn reset">
+                    <i class="fa fa-stop" aria-hidden="true"></i>
+            </div>
+        </div>
+    <div class="break-time-parent">
+        <div class="break-time-container">
+            <div class="break-text">Break Time</div>
+            <div class="break-button-container">
+                <div class="break-button">5 
+                     <div class="break-time-down-text">min</div>
+                </div>
+                <div class="break-button">10 
+                        <div class="break-time-down-text">min</div>
+                </div>
+                <div class="break-button active">15 
+                        <div class="break-time-down-text">min</div>
+                </div>
+            </div>
+            <div class="break-button-container">
+                    <div class="break-button">30
+                         <div class="break-time-down-text">min</div>
+                    </div>
+                    <div class="break-button">60
+                            <div class="break-time-down-text">min</div>
+                    </div>
+                    <div class="break-button">
+                        <span id="user-break-text"></span>
+                        <div class="break-time-down-text"><span class="user-min-text">min</span></div>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <input type="text" id="break-time-input">
+                    </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
